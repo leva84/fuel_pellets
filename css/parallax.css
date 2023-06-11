@@ -1,0 +1,30 @@
+/* Стили для элемента с фоновым изображением */
+.parallax {
+  /* Фиксация позиции элемента */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Установка фонового изображения */
+  background-image: url('../images/fuel_pellets.jpeg');
+  /* Масштабирование фонового изображения */
+  background-size: 150% 150%;
+  /* Центрирование фонового изображения */
+  background-position: center center;
+  /* Отключение повторения фонового изображения */
+  background-repeat: no-repeat;
+  /* Установка z-index для размещения элемента за другими элементами */
+  z-index: -1;
+}
+
+.overlay {
+  /* Фиксация позиции элемента */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Установка полупрозрачного фона */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(214, 248, 157, 0.5));
+}

@@ -1,0 +1,35 @@
+<div class="form-container p-5">
+	<form onsubmit="return validateForm(event)">
+		<div class="mb-3">
+			<label for="nameInput" class="form-label">Имя</label>
+			<input type="text" class="form-control" id="nameInput" placeholder="Введите ваше имя">
+		</div>
+		<div class="mb-3">
+			<label for="contactSelect" class="form-label">Контактная информация</label>
+			<select class="form-select" id="contactSelect" onchange="toggleContactInput()">
+				<option selected disabled>Выберите тип контактной информации</option>
+				<option value="phone">Телефон</option>
+				<option value="email">Почта</option>
+			</select>
+		</div>
+		<div class="mb-3 d-none" id="phoneInputWrapper">
+			<label for="phoneInput" class="form-label">Телефон</label>
+			<input type="tel" class="form-control" id="phoneInput" placeholder="Введите ваш телефон">
+			<div class="invalid-feedback">
+				Пожалуйста, введите корректный номер телефона.
+			</div>
+		</div>
+		<div class="mb-3 d-none" id="emailInputWrapper">
+			<label for="emailInput" class="form-label">Почта</label>
+			<input type="email" class="form-control" id="emailInput" placeholder="Введите вашу почту">
+			<div class="invalid-feedback">
+				Пожалуйста, введите корректный адрес электронной почты.
+			</div>
+		</div>
+		<div class="mb-3">
+			<label for="commentInput" class="form-label">Комментарии к заявке</label>
+			<textarea class="form-control" id="commentInput" rows="3"></textarea>
+		</div>
+		<button type="submit" class="btn btn-secondary">Отправить заявку</button>
+	</form>
+</div>

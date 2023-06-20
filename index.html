@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Одностраничный лендинг для продажи топливных пеллет</title>
+	<title>СпецПеллет</title>
 	<!-- подключение стилей Bootstrap CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- подключение кастомных стилей для этого шаблона -->
@@ -14,8 +14,16 @@
 	<link href="css/parallax.css" rel="stylesheet">
 	<!-- подключение стилей формы обратной связи -->
 	<link href="css/form.css" rel="stylesheet">
-	<!-- подключение файла theme_switcher.css -->
+	<!-- подключение стилей theme_switcher -->
 	<link href="css/theme_switcher.css" rel="stylesheet">
+	<!-- подключение стилей columns -->
+	<link href="css/columns.css" rel="stylesheet">
+	<!-- подключение стилей header -->
+	<link href="css/header.css" rel="stylesheet">
+	<!-- подключение стилей footer -->
+	<link href="css/footer.css" rel="stylesheet">
+	<!-- подключение стилей phone_call -->
+	<link href="css/phone_call.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,27 +32,36 @@
 	<!-- вставка на фоновое изображение полупрозрачного фона -->
 	<div class="overlay"></div>
 </div>
+
 <!-- вставка паршала с символами -->
 <div id="symbols"></div>
-<!-- вставка паршала с переключателем темы -->
-<div id="theme-switcher"></div>
+
+<!--Группа кнопок-->
+<div class="position-fixed d-grid gap-2 me-3">
+	<!-- вставка паршала с кнопкой звонка -->
+	<div id="phone-call"></div>
+	<!-- вставка паршала с переключателем темы -->
+	<div id="theme-switcher"></div>
+</div>
+
 <!-- вставка паршала шапки -->
 <div id="header"></div>
 
 <main>
 	<!-- вставка паршала карусели -->
 	<div id="carousel"></div>
+	<!-- вставка столбцов под каруселью -->
+	<div id="columns" class="marketing p-5 columns-row"></div>
 	
 	<div class="container marketing">
-		<!-- вставка столбцов под каруселью -->
-		<div id="columns"></div>
-		
 		<!-- вставка короткометражек -->
 		<div id="featurette"></div>
 	</div><!-- /.container -->
 	
+	<div id="about" class="marketing p-5 columns-row"></div>
+	<div id="price" class="m-4 pb-5"></div>
 	<!-- вставка формы обратной связи -->
-	<div id="form" class="h-100 p-4"></div>
+	<div id="form" class="h-100"></div>
 	
 	<!-- вставка подвала -->
 	<div id="footer"></div>
@@ -52,15 +69,9 @@
 
 <!-- подключение JavaScript Bundle с Popper -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<!-- подключение JavaScript YandexMap -->
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=" type="text/javascript"></script>
 <!-- подключение кастомных js -->
-<script src="js/parallax.js"></script>
-<script src="js/header.js"></script>
-<script src="js/symbols.js"></script>
-<script src="js/theme-switcher.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/columns.js"></script>
-<script src="js/featurette.js"></script>
-<script src="js/footer.js"></script>
-<script src="js/form.js"></script>
+<script src="js/custom.min.js"></script>
 </body>
 </html>

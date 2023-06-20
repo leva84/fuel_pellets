@@ -1,5 +1,6 @@
-<div class="form-container p-5">
-	<form onsubmit="return validateForm(event)">
+<div class="form-container d-flex justify-content-center p-5">
+	<form onsubmit="return validateForm(event)" class="w-75">
+		<h3 class="text-center mb-5">Отправть заявку</h3>
 		<div class="mb-3">
 			<label for="nameInput" class="form-label">Имя</label>
 			<input type="text" class="form-control" id="nameInput" placeholder="Введите ваше имя">
@@ -7,20 +8,20 @@
 		<div class="mb-3">
 			<label for="contactSelect" class="form-label">Контактная информация</label>
 			<select class="form-select" id="contactSelect" onchange="toggleContactInput()">
-				<option selected disabled>Выберите тип контактной информации</option>
+				<option selected disabled>Тип контакта</option>
 				<option value="phone">Телефон</option>
 				<option value="email">Почта</option>
 			</select>
 		</div>
 		<div class="mb-3 d-none" id="phoneInputWrapper">
-			<label for="phoneInput" class="form-label">Телефон</label>
+			<label for="phoneInput" class="form-label"><img src="images/telephone.svg" alt="Telephone icon"></label>
 			<input type="tel" class="form-control" id="phoneInput" placeholder="Введите ваш телефон">
 			<div class="invalid-feedback">
 				Пожалуйста, введите корректный номер телефона.
 			</div>
 		</div>
 		<div class="mb-3 d-none" id="emailInputWrapper">
-			<label for="emailInput" class="form-label">Почта</label>
+			<label for="emailInput" class="form-label "><img src="images/envelope.svg" alt="Envelope icon"></label>
 			<input type="email" class="form-control" id="emailInput" placeholder="Введите вашу почту">
 			<div class="invalid-feedback">
 				Пожалуйста, введите корректный адрес электронной почты.
@@ -30,6 +31,8 @@
 			<label for="commentInput" class="form-label">Комментарии к заявке</label>
 			<textarea class="form-control" id="commentInput" rows="3"></textarea>
 		</div>
-		<button type="submit" class="btn btn-secondary">Отправить заявку</button>
+		<div class="mb-3 d-flex justify-content-center">
+			<button type="submit" class="btn btn-secondary">Отправить</button>
+		</div>
 	</form>
 </div>

@@ -1,15 +1,3 @@
 .form-container {
-  background-color: rgba(144, 118, 51, 0.7);
-}
-
-.form-container .form-control,
-.form-container .form-select {
-  max-width: 50%;
-  margin: 0 auto;
-}
-
-.form-container .btn {
-  display: block;
-  width: 25%;
-  margin: 0 auto;
+  background-color: rgba(144, 135, 51, 0.4);
 }

@@ -1,0 +1,9 @@
+#map {
+  width: 500px;
+  height: 400px;
+}
+
+footer {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

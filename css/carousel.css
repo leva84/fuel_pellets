@@ -4,8 +4,9 @@
 
 body {
   padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: rgb(var(--bs-tertiary-color-rgb));
+  padding-bottom: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -13,7 +14,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -36,7 +37,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(214, 248, 157, 0.2));
+  background-image: var(--carousel-item-bg-image);
 }
 
 .carousel-item:nth-of-type(1) {

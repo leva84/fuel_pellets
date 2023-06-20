@@ -1,0 +1,24 @@
+.position-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.phone-call {
+  background-color: rgb(113, 203, 52);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    box-shadow: 0 0 5px #4bb84b;
+  }
+  50% {
+    box-shadow: 0 0 20px #349e34;
+  }
+  100% {
+    box-shadow: 0 0 5px #2a7f2a;
+  }
+}
